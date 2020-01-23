@@ -1,0 +1,11 @@
+numbers = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+L = len(numbers)
+ 
+ # i goes from 0 to the middle
+for i in range(int(L/2)): 
+
+    n = numbers[i]
+    numbers[i] = numbers[L-i-1]
+    numbers[L-i-1] = n
+print(numbers) 
